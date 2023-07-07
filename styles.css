@@ -1,0 +1,26 @@
+body {
+  font-family: Overpass;
+  background-color: #fbf8cc;
+  color: #061789;
+  padding: 35px;
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+  color: #0C0A3E;
+  text-align: center;
+}
+
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;  
+  }
+
+.card {
+  text-align: center;
+}
+
+ol {
+  color: #7400b8
+}
