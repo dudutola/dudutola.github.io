@@ -22,5 +22,9 @@ h1, h2, h3 {
 }
 
 ol {
-  color: #7400b8
+  color: #7400b8;
+}
+
+p, ul {
+  color: #061789;
 }
