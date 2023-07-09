@@ -1,16 +1,43 @@
 body {
+  margin: 0;
   font-family: Overpass;
   background-color: #fbf8cc;
   color: #061789;
   padding: 35px;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: Chivo;
   color: #0C0A3E;
   text-align: center;
 }
 
+.section {
+  background-color: #fbf496;
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  justify-content: space-between;
+}
+.section img {
+  height: 170px;
+  width: 170px;  
+  border-radius: 50%;
+}
+
+.section h1 {
+  color: ##0C0A3E;
+  font-size: 40px; 
+  font-family: Georgia, serif;
+}
+
+.section p {
+  color: #1163e1;
+  margin: auto;
+  text-align: center;
+}
+
+/*
 #profile-pic {
   width: 150px;
   height: 150px;
@@ -20,6 +47,7 @@ h1, h2, h3 {
 .card {
   text-align: center;
 }
+*/
 
 ol {
   color: #7400b8;
@@ -27,4 +55,5 @@ ol {
 
 p, ul {
   color: #061789;
+  text-align: left;
 }
