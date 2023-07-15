@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Design Web & CSS</h2>  
+    <p>Design Web involves creating visually appealing and user-friendly layouts for websites.</p>
+    <p>CSS (Cascading Style Sheets) is a programming language used to describe the presentation and styling of HTML documents. It provides a wide range of styling options to control the appearance of web pages, like the color, font form, size, spacing, create columns or add animations. </p>
+    <p>To write our CSS code, we must have a file named style.css. And to work with index.html file, we have to put the link in the head tag, this way :<br><head>(autres metas)<link href="style.css" rel="stylesheet"></head>. Then, they can work together.</p>
+    <p>CSS is used to add a style. The generic version of the syntax is as follows:<br>element { propriete: valeur; }</p>
+    <p>To add colors the best way is to use the exactly HEX of the colors, because some pc could not recognize words in english. To do that, use sites like : Color Hunt or Coolors, easy way to copy them quickly, in front of the number always add an "#".</p>
+    <p>For the font family use Google Fonts, copy the link and past this way in the head : <li/nk href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&display=swap" rel="stylesheet">
+    (by default = Courier New, Overpass, Chivo).</p>
+    <p>To change :
+        <ul>
+            <li>the weight use : font-weight : lighter/bold; </li>
+            <li>decoration : text-decoration : none; = used to remove the default underline from links.</li>
+            <li>alignment : text-align : center/right;</li>
+        </ul>
+    </p>
+    <p>It's common to apply a different style to an element when it's hovered over. In this case, we are not just talking about a specific element, but rather the specific state of a specific element. To target different states of an element in our CSS, there are so-called pseudo-classes. To add effects when hovering over an element, we use the :hover pseudo-class, like this:<br>a {
+        color: blue;
+        transition: 0.3s;
+      }
+      
+      a:hover {
+        color: red;
+      }
+    <br>In this scenario, all links in their normal state are therefore blue. But when hovered over, they turn red, with a slight transition when changing color.</p>
+    <p>Box model used when we have content that we want to group on our web page. We can structure our content like this by adding “boxes” around it, then applying style to them. In HTML, you can do this with the div element (for div-ision), like this :<d/iv><img src="images/shanghai.jpg" alt="Shanghai"><h/3>Shanghai</h3></di/v>
+    </p>
+    </body>
+</html>                 
+
