@@ -1,9 +1,10 @@
 .banner {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./img/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
   background-size: cover;
   padding: 150px 0;
   text-align: center;
   color: white;
+  text-decoration: none;
 }
 h2, h3 {
   font-family: Chivo;
@@ -16,7 +17,9 @@ h2, h3 {
   margin: auto;
   text-align: center;
 }
-
+a {
+  text-decoration: none;
+}
 /*
 #profile-pic {
   width: 150px;
