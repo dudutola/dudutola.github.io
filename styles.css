@@ -6,6 +6,9 @@
   color: white;
   text-decoration: none;
 }
+h1 {
+  text-align: center;
+}
 h2, h3 {
   font-family: Chivo;
   color: #0C0A3E;
@@ -19,6 +22,10 @@ h2, h3 {
 }
 a {
   text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: fuchsia;
 }
 /*
 #profile-pic {
@@ -33,9 +40,9 @@ a {
 */
 
 ol {
-  color: #7400b8;
+  color: #1f8aaa;
+  list-style-type: none;
 }
-
 p, ul {
   color: #061789;
   text-align: left;

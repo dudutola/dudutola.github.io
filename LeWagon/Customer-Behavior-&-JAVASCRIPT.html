@@ -29,8 +29,40 @@
         const list = document. querySelector("#players")
         console.log(list)
         // => <ul id="players"></ul></p>
-    <p></p>
-    <p></p>
+    <p>Modify an element : once we have selected the element with <strong>document.querySelector</strong> and stored it in a variable, we can start having fun interacting with it :
+    <ul>
+        <li>change the text with innerText : const slogan = document.querySelector(".motto")<br>slogan.innerText = "Change your life, learn to code"</li>
+        <li>change a CSS class with classList : this way we can add or remove a class. Ex:<br><button class="btn btn-primary" id="my-button">Clique sur moi</button>.<br>To hide it so that users cannot click on it : first, we define in our CSS a class called d-none, which will hide the element to which it is applied:
+            .d-none {
+              display: none;
+            }
+        <br>To add this CSS class to our button, we must first select it in the DOM:
+        const button = document. querySelector("#my-button")
+        <br>Then, we can modify its classes, like this:
+        button.classList.add("d-none")button.classList.remove   ("d-none")</li>
+    </ul>
+    </p>
+    <p>Event is a specific action that should trigger another action. We use <strong>addEventListener</strong>, 3 parties:
+        <ol>
+            <li>element on which we want to listen to a specific event</li>
+            <li>type of event you want to listen to</li>
+            <li>code that we want to execute when the event occurs.</li>
+        </ol>
+    <p>Ex: example with a button:
+
+    <button class="btn btn-primary" id="my-button">Click me</button></p>
+    
+    <p>When the user clicks on the button, we want to deactivate it (disable):
+    
+   <br> // first we **select** the element:
+    const button = document. querySelector("#my-button")
+    
+    <br>// then, we listen to the moment when the user clicks on the button:
+    button. addEventListener("click", () => {
+      // on click, this code will be executed:
+      button.disabled=true
+    })</p>
+    </p>
 </body>
 </html>
 
