@@ -27,6 +27,9 @@ a {
 a:hover {
   color: fuchsia;
 }
+.max-width {
+  max-width: 750px;
+}
 /*
 #profile-pic {
   width: 150px;

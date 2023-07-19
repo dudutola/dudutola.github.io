@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
-</head>
-<body>
-    <h2>Customer Behavior & JavaScript</h2>
-    <p>We can use JavaScript to modify and interact with elements, based on the elements already created, by using DOM.</p>
-    <p>DOM (Document Object Model): represents an HTML or XML document as a tree-like structure. The DOM allows programs, such as web browsers, to manipulate and interact with the structure, content, and style of a document. </p>
-    <p>Select an item : <br>since each HTML element is an object represented in the DOM, we can interact with these objects and manipulate them in JavaScript. To do this, we must select the element with which we want to interact using the following method: <strong>document.querySelector(CSS_SELECTOR)
-    </strong><br>The document here refers to the entire HTML document. The SELECTOR_CSS can be an HTML tag, a class or an id (or a combination of the three to access a specific element). <br>For example, you can select this list item:
-        
-        <ul id="players"></ul> =JS code ==> querySelector("#players")
-    <br>Note that :
-        <ul>
-            <li>The # sign used in ("#players"): To find the right element in the DOM, you need to be specific when telling JavaScript what to look for. When assigning variables in JavaScript, you must first include a special keyword, in this case const.</li>
-            <li> Once you have selected your element and stored it in a variable, check that you have found the correct elementn (forgot the # while searching for the element with id="players", or you may have a typo or any other error ?) : to find out is to display, or print, and check.</li>
-        </ul>
-    In JavaScript, to print we use a method called <strong>console.log()</strong>. This method takes an argument, which corresponds to what we want to display. Let's see some examples:
-        
-        // print the "Hello world" string:
-        console.log("Hello world")
-        // => "Hello world"
-        
-        // print the value of a selected variable:
-        const list = document. querySelector("#players")
-        console.log(list)
-        // => <ul id="players"></ul></p>
-    <p>Modify an element : once we have selected the element with <strong>document.querySelector</strong> and stored it in a variable, we can start having fun interacting with it :
-    <ul>
-        <li>change the text with innerText : const slogan = document.querySelector(".motto")<br>slogan.innerText = "Change your life, learn to code"</li>
-        <li>change a CSS class with classList : this way we can add or remove a class. Ex:<br><button class="btn btn-primary" id="my-button">Clique sur moi</button>.<br>To hide it so that users cannot click on it : first, we define in our CSS a class called d-none, which will hide the element to which it is applied:
-            .d-none {
-              display: none;
-            }
-        <br>To add this CSS class to our button, we must first select it in the DOM:
-        const button = document. querySelector("#my-button")
-        <br>Then, we can modify its classes, like this:
-        button.classList.add("d-none")button.classList.remove   ("d-none")</li>
-    </ul>
-    </p>
-    <p>Event is a specific action that should trigger another action. We use <strong>addEventListener</strong>, 3 parties:
-        <ol>
-            <li>element on which we want to listen to a specific event</li>
-            <li>type of event you want to listen to</li>
-            <li>code that we want to execute when the event occurs.</li>
-        </ol>
-    <p>Ex: example with a button:
-
-    <button class="btn btn-primary" id="my-button">Click me</button></p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mijn BLOG</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="banner mb-5">
+            <div class="container">
+            <h1>Mijn <em>BLOG</em></h1>
+            <p>In this journey, I'll show you how to learn something you never actually really thought you would learn <em>(liar).</em> I'll try to discipline myself, because I know I deserve better than this.😶‍🌫️️ Ik ben een <strong>ster !</strong></p>
+            </div>
+        </div>
+        <div class="container max-width">
+            <a href="../index.html" class="btn btn-primary mb-3">Home</a>
+            <h2>Customer Behavior & JavaScript</h2>
+            <p>We can use JavaScript to modify and interact with elements, based on the elements already created, by using DOM.</p>
+            <p>DOM (Document Object Model): represents an HTML or XML document as a tree-like structure. The DOM allows programs, such as web browsers, to manipulate and interact with the structure, content, and style of a document. </p>
+            <p>Select an item : <br>since each HTML element is an object represented in the DOM, we can interact with these objects and manipulate them in JavaScript. To do this, we must select the element with which we want to interact using the following method: <strong>document.querySelector(CSS_SELECTOR)
+            </strong><br>The document here refers to the entire HTML document. The SELECTOR_CSS can be an HTML tag, a class or an id (or a combination of the three to access a specific element). <br>For example, you can select this list item:
+                
+                <ul id="players"></ul> =JS code ==> querySelector("#players")
+            <br>Note that :
+                <ul>
+                    <li>The # sign used in ("#players"): To find the right element in the DOM, you need to be specific when telling JavaScript what to look for. When assigning variables in JavaScript, you must first include a special keyword, in this case const.</li>
+                    <li> Once you have selected your element and stored it in a variable, check that you have found the correct elementn (forgot the # while searching for the element with id="players", or you may have a typo or any other error ?) : to find out is to display, or print, and check.</li>
+                </ul>
+            In JavaScript, to print we use a method called <strong>console.log()</strong>. This method takes an argument, which corresponds to what we want to display. Let's see some examples:
+                
+                // print the "Hello world" string:
+                console.log("Hello world")
+                // => "Hello world"
+                
+                // print the value of a selected variable:
+                const list = document. querySelector("#players")
+                console.log(list)
+                // => <ul id="players"></ul></p>
+            <p>Modify an element : once we have selected the element with <strong>document.querySelector</strong> and stored it in a variable, we can start having fun interacting with it :
+            <ul>
+                <li>change the text with innerText : const slogan = document.querySelector(".motto")<br>slogan.innerText = "Change your life, learn to code"</li>
+                <li>change a CSS class with classList : this way we can add or remove a class. Ex:<br><button class="btn btn-primary" id="my-button">Clique sur moi</button>.<br>To hide it so that users cannot click on it : first, we define in our CSS a class called d-none, which will hide the element to which it is applied:
+                    .d-none {
+                    display: none;
+                    }
+                <br>To add this CSS class to our button, we must first select it in the DOM:
+                const button = document. querySelector("#my-button")
+                <br>Then, we can modify its classes, like this:
+                button.classList.add("d-none")button.classList.remove   ("d-none")</li>
+            </ul>
+            </p>
+            <p>Event is a specific action that should trigger another action. We use <strong>addEventListener</strong>, 3 parties:
+                <ol>
+                    <li>element on which we want to listen to a specific event</li>
+                    <li>type of event you want to listen to</li>
+                    <li>code that we want to execute when the event occurs.</li>
+                </ol>
+            <p>Ex: example with a button:
     
-    <p>When the user clicks on the button, we want to deactivate it (disable):
-    
-   <br> // first we **select** the element:
-    const button = document. querySelector("#my-button")
-    
-    <br>// then, we listen to the moment when the user clicks on the button:
-    button. addEventListener("click", () => {
-      // on click, this code will be executed:
-      button.disabled=true
-    })</p>
-    </p>
-</body>
+            <button class="btn btn-primary" id="my-button">Click me</button></p>
+            
+            <p>When the user clicks on the button, we want to deactivate it (disable):
+            
+        <br> // first we **select** the element:
+            const button = document. querySelector("#my-button")
+            
+            <br>// then, we listen to the moment when the user clicks on the button:
+            button. addEventListener("click", () => {
+            // on click, this code will be executed:
+            button.disabled=true
+            })</p>
+            </p>
+        </div>
+    </body>
 </html>
 
 
