@@ -28,7 +28,7 @@ a:hover {
   color: fuchsia;
 }
 .max-width {
-  max-width: 750px;
+  max-width: 800px;
 }
 /*
 #profile-pic {
@@ -50,3 +50,4 @@ p, ul {
   color: #061789;
   text-align: left;
 }
+ 
