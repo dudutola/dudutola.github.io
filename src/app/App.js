@@ -4,6 +4,7 @@ import '../styles/main.scss';
 import { Home } from "../pages/Home";
 import { Error } from "../pages/Error";
 import { Header } from "../components/Header";
+import { Footer } from "../components/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/portfolio" element={<Home />}/>
         <Route path="*" element={<Error />}/>
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
