@@ -3,8 +3,8 @@ import "../../styles/components/_header.scss";
 
 export const Header = () => {
   return (
-    <nav className="main__nav">
-      <Link to="/portfolio" className="main__nav--logo">
+    <nav className="navbar">
+      <Link to="/portfolio" className="navbar__logo">
         <h1>Dulcelene Machado</h1>
       </Link>
       <div>
