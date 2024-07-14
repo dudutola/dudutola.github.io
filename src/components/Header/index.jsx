@@ -7,10 +7,10 @@ export const Header = () => {
       <Link to="/portfolio" className="navbar__logo">
         <h1>Dulcelene Machado</h1>
       </Link>
-      <div>
+      <div className="navbar__title">
         <h2>Portfolio</h2>
       </div>
-      <div>
+      <div className="navbar__links">
         <span>Projects</span>
         <span>Skills</span>
         <span>Contact</span>

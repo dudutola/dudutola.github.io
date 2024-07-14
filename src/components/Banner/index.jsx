@@ -1,3 +1,4 @@
+import "../../styles/components/_banner.scss";
 
 export const Banner = () => {
   return (

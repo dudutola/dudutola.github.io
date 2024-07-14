@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Banner } from "../../components/Banner";
 import { Projects } from "../../components/Projects";
 import projectsData from "../../data/projectsData.json";
+import "../../styles/pages/_home.scss";
 
 export const Home = () => {
   // only show 4
@@ -22,7 +23,7 @@ export const Home = () => {
   return (
     <main>
       <Banner />
-      <section>
+      <section className="projects">
         <h1>My Projects</h1>
         <div className="cards">
           {projects.map((project, index) => (
@@ -37,7 +38,7 @@ export const Home = () => {
           {showAll ? "Show Less" : "Show More"}
         </button>
       </section>
-      <section className="drie">
+      <section className="languages">
         <h1>naar jouw haus</h1>
       </section>
       <section className="vijf">
