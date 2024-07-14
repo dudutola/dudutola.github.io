@@ -1,0 +1,56 @@
+.cards {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  // gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.card {
+  // flex-grow: 1;
+  width: 20%;
+  background-color: red;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  // height: 94%;
+  // height: 200px;
+  position: relative;
+  cursor: pointer;
+
+  & img {
+    width: 100%;
+    height: 200px;
+    // height: auto;
+    // display: block;
+    position: relative;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  &__description {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: 0.6s;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &:hover {
+      opacity: 1;
+    }
+
+    & > * {
+      transform: translateY(25px);
+      transition: transform 0.6s;
+    }
+    &:hover > * {
+      transform: translateY(0px);
+    }
+  }
+}
