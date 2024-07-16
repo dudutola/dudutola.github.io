@@ -1,22 +1,37 @@
 [
   {
-    "src": "/img/flower.jpg",
-    "figcation": "descripton pour chaque card"
+    "name": "Ellyzé",
+    "src": "/img/book-white.png",
+    "figcaption": "Website dedicated to showcasing and selling a commemorative book."
   },
   {
+    "name": "Booki",
     "src": "/img/flower.jpg",
-    "figcation": "descripton pour chaque card"
+    "figcaption": "Online platform to quickly find accommodations and personalized activities in your favorite city or region."
   },
   {
+    "name": "OhMyFood",
     "src": "/img/flower.jpg",
-    "figcation": "descripton pour chaque card"
+    "figcaption": "A startup that lists menus from gourmet restaurants in Paris and allows customers to pre-compose their own menu in advance."
   },
   {
+    "name": "Sophie Bluel",
     "src": "/img/flower.jpg",
-    "figcation": "descripton pour chaque card"
+    "figcaption": "Front-End development for an interior designer's portfolio website, showcasing her projects and expertise."
   },
   {
+    "name": "Kasa",
     "src": "/img/flower.jpg",
-    "figcation": "iciii la descripton pour chaque card"
+    "figcaption": "Platform for peer-to-peer apartment rentals in France, with over 500 listings posted daily"
+  },
+  {
+    "name": "724Events",
+    "src": "/img/flower.jpg",
+    "figcaption": "Website for an event agency designed to showcase its services, achievements, and facilitate contact with visitors interested in event planning."
+  },
+  {
+    "name": "Argent Bank",
+    "src": "/img/flower.jpg",
+    "figcaption": "New online bank with an app for secure account management."
   }
 ]

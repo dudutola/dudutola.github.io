@@ -7,17 +7,14 @@ import projectsData from "../../data/projectsData.json";
 import "../../styles/pages/_home.scss";
 
 export const Home = () => {
-  // only show 4
   const [projects, setProjects] = useState(projectsData.slice(0, 4));
   const [showAll, setShowAll] = useState(false);
 
   const handleShowAll = () => {
     setShowAll(!showAll);
     if (!showAll) {
-      // show all
       setProjects(projectsData);
     } else {
-      // show only the first 4
       setProjects(projectsData.slice(0, 4));
     }
   }
@@ -32,7 +29,7 @@ export const Home = () => {
             <Projects
               key={index}
               src={project.src}
-              figcation={project.figcation}
+              figcaption={project.figcaption}
             />
           ))}
         </div>

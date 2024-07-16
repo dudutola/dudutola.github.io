@@ -28,6 +28,10 @@ section {
   scroll-snap-align: start;
   padding: 0 100px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
