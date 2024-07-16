@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Banner } from "../../components/Banner";
 import { Projects } from "../../components/Projects";
+import { Skills } from "../../components/Skills";
 import projectsData from "../../data/projectsData.json";
 import "../../styles/pages/_home.scss";
 
@@ -38,8 +39,9 @@ export const Home = () => {
           {showAll ? "Show Less" : "Show More"}
         </button>
       </section>
-      <section className="languages">
-        <h1>naar jouw haus</h1>
+      <section className="skills">
+        <h1>Skills</h1>
+        <Skills />
       </section>
       <section className="vijf">
         <h1>mijn haus</h1>

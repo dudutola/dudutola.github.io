@@ -19,8 +19,8 @@ export const Projects = ({ src, figcation }) => {
       onMouseLeave={handleMouseLeave}
     >
       {!isDescriptionVisible && (
-        // <img src={process.env.PUBLIC_URL + image} alt="" />
-        <img src={"portfolio/" + src} alt="" />
+        <img src={process.env.PUBLIC_URL + src} alt="" />
+        // <img src={"portfolio/" + src} alt="" />
       )}
       {isDescriptionVisible && (
         <p className="card__description">{figcation}</p>
