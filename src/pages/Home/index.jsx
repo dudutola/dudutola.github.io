@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Banner } from "../../components/Banner";
 import { Projects } from "../../components/Projects";
 import { Skills } from "../../components/Skills";
+import { Contact } from "../../components/Contact";
 import projectsData from "../../data/projectsData.json";
 import "../../styles/pages/_home.scss";
 
@@ -43,8 +44,9 @@ export const Home = () => {
         <h1>Skills</h1>
         <Skills />
       </section>
-      <section className="vijf">
-        <h1>mijn haus</h1>
+      <section className="contact">
+        <h1>Contact me</h1>
+        <Contact />
       </section>
     </main>
   );
