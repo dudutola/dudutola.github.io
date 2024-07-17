@@ -47,3 +47,29 @@
 .card-skill.bottom {
   transform: translateY(10px);
 }
+
+
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  justify-content: space-between;
+
+  &__icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    & img {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
