@@ -22,7 +22,7 @@ export const Home = () => {
   return (
     <main>
       <Banner />
-      <section className="projects">
+      <section className="projects" id="my-projects">
         <h1>My Projects</h1>
         <div className="cards">
           {projects.map((project, index) => (
@@ -37,11 +37,11 @@ export const Home = () => {
           {showAll ? "Show Less" : "Show More"}
         </button>
       </section>
-      <section className="skills">
+      <section className="skills" id="my-skills">
         <h1>Skills</h1>
         <Skills />
       </section>
-      <section className="contact">
+      <section className="contact" id="contact-me">
         <h1>Contact me</h1>
         <Contact />
       </section>
