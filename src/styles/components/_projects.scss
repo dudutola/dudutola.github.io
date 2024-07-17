@@ -29,13 +29,10 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    // opacity: 0;
-    // transition: opacity 0.6s;
-    // background-color: rgba(233, 232, 232, 0.6);
     background-color: rgba(217, 215, 215, 0.6);
     border-radius: 0 0 20px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 20px;
@@ -54,6 +51,25 @@
     }
     &:hover > * {
       transform: translateY(0px);
+    }
+
+    .links {
+      display: flex;
+      gap: 60px;
+    }
+
+    .plus {
+      border: 1px solid;
+      padding: 10px;
+      border-radius: 3px;
+      font-size: 1em;
+      border: 0;
+      color: #fff;
+      background-color: #b38456;
+
+      &:hover {
+        background-color: black;
+      }
     }
   }
 }
@@ -81,6 +97,10 @@
   text-align: center;
   z-index: 1001;
   background-color: white;
+
+  img {
+    width: 200px;
+  }
 }
 
 .dialog-close {

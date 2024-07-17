@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "../../styles/components/_projects.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
-export const Projects = ({ src, figcaption }) => {
+export const Projects = ({ src, figcaption, github, site, name, description, tools }) => {
   const [isHovered, setHovered] = useState(false);
   const [isDialogOpen, setDialogOpen] = useState(false);
 
@@ -25,7 +28,15 @@ export const Projects = ({ src, figcaption }) => {
         {isHovered && (
           <figcaption className="card__description">
             {figcaption}
-            <button onClick={openDialog}>show</button>
+            <div className="links">
+              <Link to={github} target="_blank">GitHub</Link>
+              {site &&
+                <Link to={site} target="_blank">Site</Link>
+              }
+            </div>
+            <span onClick={openDialog} className="plus">
+              <FontAwesomeIcon icon={faPlus} />
+            </span>
           </figcaption>
         )}
       </figure>
@@ -33,11 +44,14 @@ export const Projects = ({ src, figcaption }) => {
       {isDialogOpen && (
         <div className="dialog-overlay">
           <dialog className="dialog" open>
-            <h3>Nom du projet</h3>
-            <p>resume du projet</p>
-            <p>outil utilise</p>
-            <p><a href="https://github.com">GitHub</a></p>
-            <p><a href="https://browser.com">Browser</a></p>
+            <h3>{name}</h3>
+            <p>{description}</p>
+            <div className="dialog__tools">
+              <h4>Outils utilisés:</h4>
+              {tools.map((tool, index) => {
+                return <img key={index} src={process.env.PUBLIC_URL + "/img/" + tool + ".png"} alt="" />
+              })}
+            </div>
             <button onClick={closeDialog}>Close</button>
           </dialog>
         </div>

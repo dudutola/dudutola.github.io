@@ -28,8 +28,13 @@ export const Home = () => {
           {projects.map((project, index) => (
             <Projects
               key={index}
+              name={project.name}
               src={project.src}
               figcaption={project.figcaption}
+              github={project.github}
+              site={project.site}
+              description={project.description}
+              tools={project.tools}
             />
           ))}
         </div>

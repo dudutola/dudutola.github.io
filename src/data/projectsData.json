@@ -2,36 +2,81 @@
   {
     "name": "Ellyzé",
     "src": "/img/book-white.png",
-    "figcaption": "Website dedicated to showcasing and selling a commemorative book."
+    "figcaption": "Website dedicated to showcasing and selling a commemorative book.",
+    "github": "https://github.com/dudutola/livro",
+    "site": "https://www.zmacar.com/",
+    "description": "Création d'une page d'accueil pour une agence de voyage en intégrant des sections pour la recherche d'hébergements et d'activités dans différentes villes. de formulaires de recherche, de filtres, et de différents conteneurs pour les hébergements et les activités. Enfin, vous devrez rendre le site responsive.",
+    "tools": [
+      "html",
+      "css"
+    ]
   },
   {
     "name": "Booki",
     "src": "/img/BookiLogo.png",
-    "figcaption": "Online platform to quickly find accommodations and personalized activities in your favorite city or region."
+    "figcaption": "Online platform to quickly find accommodations and personalized activities in your favorite city or region.",
+    "github": "https://github.com/dudutola/booki-starter-code",
+    "site": "https://dudutola.github.io/booki-starter-code/",
+    "description": "Création d'une page d'accueil pour une agence de voyage en intégrant des sections pour la recherche d'hébergements et d'activités dans différentes villes. de formulaires de recherche, de filtres, et de différents conteneurs pour les hébergements et les activités. Enfin, vous devrez rendre le site responsive.",
+    "tools": [
+      "html",
+      "css"
+    ]
   },
   {
     "name": "OhMyFood",
     "src": "/img/ohmyfoodLogo.png",
-    "figcaption": "A startup that lists menus from gourmet restaurants in Paris and allows customers to pre-compose their own menu in advance."
+    "figcaption": "A startup that lists menus from gourmet restaurants in Paris and allows customers to pre-compose their own menu in advance.",
+    "github": "https://github.com/dudutola/Ohmyfood",
+    "site": "https://dudutola.github.io/Ohmyfood/",
+    "description": "intégrer l'interface mobile-first d'une startup  intégrerez et animerez la version mobile de la page d'accueil. Après cela, vous rendrez la page d'accueil responsive pour s'adapter à différents appareils. Vous intégrerez ensuite le code des pages des différents restaurants en adaptant les contenus.",
+    "tools": [
+      "html",
+      "sass"
+    ]
   },
   {
     "name": "Sophie Bluel",
     "src": "/img/SophieBluelLogo.png",
-    "figcaption": "Front-End development for an interior designer's portfolio website, showcasing her projects and expertise."
+    "figcaption": "Front-End development for an interior designer's portfolio website, showcasing her projects and expertise.",
+    "github": "https://github.com/dudutola/Portfolio-architecte-sophie-bluel",
+    "description": "développer la page de présentation des travaux, une page de connexion et une modale pour gérer l'ajout et la suppression de projets. Vous devrez récupérer les données via une API, implémenter un système de filtres, mettre en place l'authentification de l'utilisateur via un formulaire, et interagir avec le back-end de l'application. Votre objectif final sera de créer une page web dynamique et fonctionnelle, prête à être présentée.",
+    "tools": [
+      "html",
+      "js",
+      "sass"
+    ]
   },
   {
     "name": "Kasa",
     "src": "/img/KasaLogo.png",
-    "figcaption": "Platform for peer-to-peer apartment rentals in France, with over 500 listings posted daily"
+    "figcaption": "Platform for peer-to-peer apartment rentals in France, with over 500 listings posted daily",
+    "github": "https://github.com/dudutola/kasa",
+    "description": "développer une application web en utilisant React et React Router, créer une interface front-end en vous basant sur des designs fournis et en utilisant un fichier JSON contenant des annonces immobilières. Vous devrez également mettre en place des animations et des transitions pour enrichir l'expérience utilisateur. ",
+    "tools": [
+      "react",
+      "sass"
+    ]
   },
   {
     "name": "724Events",
     "src": "/img/724eventsLogo.png",
-    "figcaption": "Website for an event agency designed to showcase its services, achievements, and facilitate contact with visitors interested in event planning."
+    "figcaption": "Website for an event agency designed to showcase its services, achievements, and facilitate contact with visitors interested in event planning.",
+    "github": "https://github.com/dudutola/Debuggez-une-application-React.JS",
+    "description": "débugger et de tester la nouvelle version du site vitrine de l'agence. Vous devrez analyser le code existant, résoudre les bugs, compléter un cahier de recette avec des scénarios de test, et préparer une présentation pour démontrer le fonctionnement du site, votre code corrigé et votre cahier de recette.",
+    "tools": "Chrome DevTools, React Developer Tools, Yarn et Node.js."
   },
   {
     "name": "Argent Bank",
     "src": "/img/argentBankLogo.png",
-    "figcaption": "New online bank with an app for secure account management."
+    "figcaption": "New online bank with an app for secure account management.",
+    "github": "https://github.com/dudutola/ArgentBank",
+    "description": "une application web responsive qui permettra aux utilisateurs de se connecter, de visualiser leurs transactions mensuelles, d'ajouter, de modifier ou de supprimer des informations sur leurs transactions, et de modifier leur pseudo. Vous intégrerez également le contenu avec React Router pour une expérience de navigation fluide. Pour la phase 2, vous rédigerez un document Swagger pour décrire les routes API qui permettront la manipulation des transactions.",
+    "tools": [
+      "react",
+      "redux",
+      "sass",
+      "yaml"
+    ]
   }
 ]
