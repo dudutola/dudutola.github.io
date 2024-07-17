@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6d71f9f3.css",
-    "main.js": "/portfolio/static/js/main.546f1c1b.js",
+    "main.css": "/portfolio/static/css/main.a90fb01d.css",
+    "main.js": "/portfolio/static/js/main.efefdb0b.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/flower.jpg": "/portfolio/static/media/flower.16074a11162cc019cc37.jpg",
     "static/media/vsc.webp": "/portfolio/static/media/vsc.93bc24635bd534554530.webp",
@@ -9,12 +9,12 @@
     "static/media/GitHubLogo.svg": "/portfolio/static/media/GitHubLogo.7d6b7d8513e06be0a531dc9303e0bafe.svg",
     "static/media/Figma-logo.svg": "/portfolio/static/media/Figma-logo.0f4098dccb2a84e24331b00bc6a8dcf8.svg",
     "index.html": "/portfolio/index.html",
-    "main.6d71f9f3.css.map": "/portfolio/static/css/main.6d71f9f3.css.map",
-    "main.546f1c1b.js.map": "/portfolio/static/js/main.546f1c1b.js.map",
+    "main.a90fb01d.css.map": "/portfolio/static/css/main.a90fb01d.css.map",
+    "main.efefdb0b.js.map": "/portfolio/static/js/main.efefdb0b.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d71f9f3.css",
-    "static/js/main.546f1c1b.js"
+    "static/css/main.a90fb01d.css",
+    "static/js/main.efefdb0b.js"
   ]
 }
