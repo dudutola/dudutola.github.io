@@ -1,3 +1,93 @@
 .banner {
   background-color: #b38456;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  &__description {
+    background-color: #b38456;
+    padding: 0;
+    text-align: left;
+
+    .titles {
+      position: relative;
+      height: 7em;
+    }
+
+    h2 {
+      font-size: 7em;
+      color: #fff;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      transform: translateY(100%);
+      // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      // transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+      // animation: stay-visible 3s ease-in-out forwards;
+      animation: stay-visible 4s ease-in-out forwards;
+    }
+
+    p {
+      font-size: 24px;
+      margin-top: 1em;
+    }
+
+    .arrow {
+      animation: arrowMoving 1s infinite;
+      transform: translateY(-50%);
+    }
+
+    .fa-arrow-down {
+      font-size: 6em;
+      color: #b5b5b5;
+    }
+  }
+
+  &__me {
+    img {
+      border-radius: 255px;
+      width: 400px;
+    }
+  }
+}
+
+@keyframes stay-visible {
+  0%, 50% {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowMoving {
+  0%, 20% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  50%, 80% {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }

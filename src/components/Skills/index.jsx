@@ -29,7 +29,9 @@ export const Skills = () => {
   return (
     <>
       <div className="skills_wrapper">
-        <div className={`skills__cards ${isMoving ? 'moving' : ''}`}>
+        <div
+          // className={`skills__cards ${isMoving ? 'moving' : ''}`}
+        >
         {languages.map((language, index) => (
             <div
               key={index}
