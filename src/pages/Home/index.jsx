@@ -46,7 +46,7 @@ export const Home = () => {
         <h1>Skills</h1>
         <Skills />
       </section>
-      <section className="contact" id="contact-me">
+      <section className="contact" id="my-contact">
         <h1>Contact me</h1>
         <Contact />
       </section>

@@ -23,16 +23,19 @@ export const Header = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <Link to="/portfolio" className="navbar__logo">
-        <h1>Dulcelene Machado</h1>
-      </Link>
+     <div className={`navbar__logo ${scrolled ? 'hidden' : ''}`}>
+        <Link to="/portfolio">
+          <h1>Dulcelene Machado</h1>
+        </Link>
+        <p>Développeuse Web</p>
+      </div>
       <div className="navbar__title">
-        <h2>Portfolio</h2>
+        <h2>{scrolled ? <span className="new-title">DM</span> : 'Portfolio'}</h2>
       </div>
       <div className="navbar__links">
-        <a href="#my-projects">Projects</a>
-        <a href="#my-skills">Skills</a>
-        <a href="#my-contact">Contact</a>
+        <a href="#my-projects" className={`navbar__links--projects ${scrolled ? 'black-links' : ''}`}>Projects</a>
+        <a href="#my-skills" className={`navbar__links--skills ${scrolled ? 'black-links' : ''}`}>Skills</a>
+        <a href="#my-contact" className={`navbar__links--contact ${scrolled ? 'black-links' : ''}`}>Contact</a>
       </div>
     </nav>
   );
