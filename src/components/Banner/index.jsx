@@ -26,13 +26,13 @@ export const Banner = () => {
             Développeuse Frontend
           </h2>
         </div>
-        <p>En combinant créativité artistique et compétences techniques, je crée des expériences numériques engageantes.</p>
+        <div className="banner__me">
+          <p>En combinant créativité artistique et compétences techniques, je crée des expériences numériques engageantes.</p>
+          <img src={me} alt="dulcelene" />
+        </div>
         <div className="arrow">
           <FontAwesomeIcon icon={faArrowDown} />
         </div>
-      </div>
-      <div className="banner__me">
-        <img src={me} alt="dulcelene" />
       </div>
     </section>
   );

@@ -1,9 +1,10 @@
 .banner {
   background-color: #b38456;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  // justify-content: space-between;
+  align-items: normal;
+  // flex-direction: row;
+  padding-top: 240px;
 
   &__description {
     background-color: #b38456;
@@ -12,7 +13,7 @@
 
     .titles {
       position: relative;
-      height: 7em;
+      height: 2em;
     }
 
     h2 {
@@ -38,26 +39,31 @@
       animation: stay-visible 4s ease-in-out forwards;
     }
 
-    p {
-      font-size: 24px;
-      margin-top: 1em;
-    }
-
     .arrow {
-      animation: arrowMoving 1s infinite;
-      transform: translateY(-50%);
+      animation: arrowMoving 1.5s infinite;
+      transform: translateY(-30%);
     }
 
     .fa-arrow-down {
-      font-size: 6em;
-      color: #b5b5b5;
+      font-size: 5em;
+      color: #fff;
     }
   }
 
   &__me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 30px;
+      margin-top: 1em;
+    }
+
     img {
       border-radius: 255px;
       width: 400px;
+      padding-top: 32px;
     }
   }
 }
@@ -65,11 +71,11 @@
 @keyframes stay-visible {
   0%, 50% {
     opacity: 1;
-    transform: translateY(-100%);
+    transform: translateY(-80%);
   }
   60% {
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
   100% {
     opacity: 0;
@@ -80,14 +86,14 @@
 @keyframes arrowMoving {
   0%, 20% {
     opacity: 1;
-    transform: translate(-50%, 0);
+    transform: translateY(-20%);
   }
   50%, 80% {
     opacity: 0;
-    transform: translate(-50%, 10px);
+    transform: translateY(20%);
   }
   100% {
-    opacity: 1;
-    transform: translate(-50%, 0);
+    opacity: 0;
+    transform: translateY(0);
   }
 }
