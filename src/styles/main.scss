@@ -50,3 +50,9 @@ h4 {
 }
 
 @import "./components/header";
+
+@media (max-width: 768px) {
+  main {
+    display: none;
+  }
+}

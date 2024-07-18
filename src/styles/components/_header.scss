@@ -135,3 +135,35 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+
+    &__logo {
+      display: none;
+    }
+
+    &__title {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    &__links {
+      display: flex;
+
+      & a {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+
+      &--projects {
+        display: none;
+      }
+
+      &--skills {
+        display: none;
+      }
+    }
+  }
+}
