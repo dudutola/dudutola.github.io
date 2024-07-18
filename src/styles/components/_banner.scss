@@ -1,9 +1,7 @@
 .banner {
   background-color: #b38456;
   display: flex;
-  // justify-content: space-between;
   align-items: normal;
-  // flex-direction: row;
   padding-top: 240px;
 
   &__description {
@@ -26,10 +24,6 @@
       right: 0;
       opacity: 0;
       transform: translateY(100%);
-      // transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-      // transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-      transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-
     }
 
     .fade-in.visible {
@@ -57,7 +51,6 @@
 
     p {
       font-size: 30px;
-      margin-top: 1em;
     }
 
     img {
@@ -95,5 +88,42 @@
   100% {
     opacity: 0;
     transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .banner {
+    padding-top: 60px;
+
+    &__description {
+      gap: 100px;
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-size: 2.5em;
+      }
+
+      .fa-arrow-down {
+        font-size: 3em;
+      }
+    }
+
+    &__me {
+      display: flex;
+      position: relative;
+      align-items: center;
+
+      p {
+        font-size: 18px;
+      }
+
+      img {
+        border-radius: 50px;
+        width: 80px;
+        padding-top: 0;
+      }
+    }
   }
 }
