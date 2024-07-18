@@ -1,4 +1,3 @@
-// import { useState } from "react";
 import "../../styles/components/_skills.scss";
 import git from "../../images/13.png";
 import vsc from "../../images/vsc.webp";
@@ -6,55 +5,41 @@ import figma from "../../images/Figma-logo.svg";
 import github from "../../images/GitHubLogo.svg";
 
 export const Skills = () => {
-  // const [isMoving, setIsMoving] = useState(true);
-
-  // const handleCardMouseEnter = () => {
-  //   setIsMoving(false);
-  // };
-
-  // const handleCardMouseLeave = () => {
-  //   setIsMoving(true);
-  // };
 
   const languages = [
     {
       name: 'Html',
-      description: 'ceci est une description',
+      image: '/img/html.png',
     },
     {
       name: 'Css',
-      description: 'ceci est une description',
+      image: '/img/css.png',
     },
     {
       name: 'JS',
-      description: 'ceci est une description',
+      image: '/img/js.png',
     },
     {
       name: 'Scss',
-      description: 'ceci est une description',
+      image: '/img/sass.png',
     },
     {
       name: 'React',
-      description: 'ceci est une description',
+      image: '/img/react.png',
     },
     {
       name: 'Redux',
-      description: 'ceci est une description',
+      image: '/img/redux.png',
     }
   ];
-
 
   return (
     <>
       <div className="skills__cards">
           {languages.map((language, index) => {
               return <div className="card-skill" key={index}>
-                <div className="card-title">
-                  <h3>{language.name}</h3>
-                </div>
-                {/* <div className="card-description">
-                  <h3>{language.description}</h3>
-                </div> */}
+                <h3>{language.name}</h3>
+                <img src={process.env.PUBLIC_URL + language.image} alt="" width={300} height={300} />
               </div>
           })}
       </div>
