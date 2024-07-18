@@ -123,6 +123,9 @@
         border-radius: 50px;
         width: 80px;
         padding-top: 0;
+        height: auto;
+        max-height: 20vh;
+        object-fit: contain;
       }
     }
   }
