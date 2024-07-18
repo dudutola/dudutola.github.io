@@ -38,7 +38,7 @@ export const Home = () => {
             />
           ))}
         </div>
-        <button onClick={handleShowAll}>
+        <button className="btn" onClick={handleShowAll}>
           {showAll ? "Show Less" : "Show More"}
         </button>
       </section>

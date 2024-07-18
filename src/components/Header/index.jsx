@@ -37,6 +37,15 @@ export const Header = () => {
         <a href="#my-skills" className={`navbar__links--skills ${scrolled ? 'black-links' : ''}`}>Skills</a>
         <a href="#my-contact" className={`navbar__links--contact ${scrolled ? 'black-links' : ''}`}>Contact</a>
       </div>
+      <div className="dropdown">
+        <button id="menu">Menu</button>
+        <ul className="submenu">
+          <li><a href="#my-projects" className="">Projects</a></li>
+          <li><a href="#my-skills" className="">Skills</a></li>
+          <li><a href="#my-contact" className="">Contact</a></li>
+        </ul>
+      </div>
+
     </nav>
   );
 };

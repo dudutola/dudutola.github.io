@@ -73,7 +73,7 @@ export const Projects = ({ src, figcaption, github, site, name, description, too
                 return <img key={index} src={process.env.PUBLIC_URL + "/img/" + tool + ".png"} alt="" />
               })}
             </div>
-            <button onClick={closeDialog}>Close</button>
+            <button className="btn" onClick={closeDialog}>Close</button>
           </dialog>
         </div>
       )}
