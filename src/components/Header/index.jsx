@@ -39,7 +39,7 @@ export const Header = () => {
       </div>
       <div className="dropdown">
         <button id="menu">Menu</button>
-        <ul className="submenu">
+        <ul className="submenu" aria-label="submenu">
           <li><a href="#my-projects" className="">Projects</a></li>
           <li><a href="#my-skills" className="">Skills</a></li>
           <li><a href="#my-contact" className="">Contact</a></li>

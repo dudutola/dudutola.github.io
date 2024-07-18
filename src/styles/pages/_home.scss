@@ -1,5 +1,6 @@
 .projects {
   background-color: #f1ebe4;
+  height: auto;
 }
 
 .skills {
@@ -8,7 +9,12 @@
 }
 
 @media (max-width: 768px) {
-  .projects, .skills, .contact {
+  .skills, .contact {
     display: none;
+  }
+
+  .projects {
+    height: auto;
+    padding: 36px 20px;
   }
 }
