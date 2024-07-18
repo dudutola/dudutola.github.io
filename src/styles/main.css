@@ -1,23 +1,225 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 #root {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 0;
+  background-color: #b38456;
 }
 
-.main {
+main {
   flex: 1;
+  padding-top: 80px;
 }
 
 img {
-  width: 100%;
   height: fit-content;
 }
 
-.main__nav {
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 0 100px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 24px;
+  color: #b38456;
+  font-weight: bold;
+  border-bottom: 1px solid #ac7b49;
+}
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 108px;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 100px;
+  transition: background-color 0.3s ease;
+  background-color: transparent;
+}
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.47);
+}
+.navbar__logo a, .navbar__logo h1, .navbar__logo p {
+  color: #fff;
+}
+.navbar__logo h1, .navbar__logo p {
+  margin: 0;
+}
+.navbar__logo p {
+  font-size: 18px;
+}
+.navbar__logo.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.navbar__title {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  margin-left: 140px;
+}
+.navbar__title .new-title {
+  color: black;
+}
+.navbar__links {
+  display: flex;
+}
+.navbar__links a {
+  margin-left: 20px;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 16px 20px;
+  border-radius: 28px;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.navbar__links .black-links {
+  border: 1px solid black;
+  color: black;
+}
+.navbar__links--skills.black-links::before {
+  background-color: black;
+}
+.navbar__links--skills.black-links::after {
+  color: #fff;
+}
+.navbar__links--skills.black-links:hover::after {
+  color: #fff;
+}
+.navbar__links--contact.black-links {
+  background-color: black;
+  color: #fff;
+}
+.navbar__links--projects {
+  color: white;
+}
+.navbar__links--projects:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+.navbar__links--skills {
+  color: white;
+  position: relative;
+}
+.navbar__links--skills::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  z-index: -1;
+  transition: height 0.3s ease-in-out;
+}
+.navbar__links--skills:hover::before {
+  height: 100%;
+}
+.navbar__links--skills::after {
+  content: "Skills";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scaleY(0);
+  transform-origin: bottom;
+  color: black;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.navbar__links--skills:hover::after {
+  transform: translate(-50%, -50%) scaleY(1);
+  color: black;
+}
+.navbar__links--contact {
+  background-color: #fff;
+  color: black;
+}
+.navbar .dropdown {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .navbar__logo {
+    display: none;
+  }
+  .navbar__title {
+    font-size: 18px;
+    margin: 0;
+  }
+  .navbar__links {
+    display: none;
+  }
+  .navbar .dropdown {
+    display: block;
+    position: relative;
+  }
+  .navbar .dropdown #menu {
+    font-size: 22px;
+    border: 0;
+    background-color: transparent;
+    color: white;
+  }
+  .navbar .dropdown .submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 1rem;
+    left: -56px;
+    list-style: none;
+    display: none;
+    font-size: 20px;
+    border-radius: 4px;
+  }
+  .navbar .dropdown .submenu a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .navbar .dropdown #menu:hover + .submenu,
+  .navbar .dropdown #menu:active + .submenu {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: black;
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -67,11 +67,13 @@ export const Projects = ({ src, figcaption, github, site, name, description, too
           <dialog className="dialog" open>
             <h3>{name}</h3>
             <p>{description}</p>
-            <div className="dialog__tools">
+            <div>
               <h4>Outils utilisés:</h4>
-              {tools.map((tool, index) => {
-                return <img key={index} src={process.env.PUBLIC_URL + "/img/" + tool + ".png"} alt="" />
-              })}
+              <div className="dialog__tools">
+                {tools.map((tool, index) => {
+                  return <img key={index} src={process.env.PUBLIC_URL + "/img/" + tool + ".png"} alt="" />
+                })}
+              </div>
             </div>
             <button className="btn" onClick={closeDialog}>Close</button>
           </dialog>
