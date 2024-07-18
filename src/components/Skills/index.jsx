@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "../../styles/components/_skills.scss";
 import git from "../../images/13.png";
 import vsc from "../../images/vsc.webp";
@@ -6,42 +6,57 @@ import figma from "../../images/Figma-logo.svg";
 import github from "../../images/GitHubLogo.svg";
 
 export const Skills = () => {
-  const [isMoving, setIsMoving] = useState(true);
+  // const [isMoving, setIsMoving] = useState(true);
 
-  const handleCardMouseEnter = () => {
-    setIsMoving(false);
-  };
+  // const handleCardMouseEnter = () => {
+  //   setIsMoving(false);
+  // };
 
-  const handleCardMouseLeave = () => {
-    setIsMoving(true);
-  };
+  // const handleCardMouseLeave = () => {
+  //   setIsMoving(true);
+  // };
 
   const languages = [
-    'Html',
-    'Css',
-    'JS',
-    'Scss',
-    'React',
-    'Redux'
+    {
+      name: 'Html',
+      description: 'ceci est une description',
+    },
+    {
+      name: 'Css',
+      description: 'ceci est une description',
+    },
+    {
+      name: 'JS',
+      description: 'ceci est une description',
+    },
+    {
+      name: 'Scss',
+      description: 'ceci est une description',
+    },
+    {
+      name: 'React',
+      description: 'ceci est une description',
+    },
+    {
+      name: 'Redux',
+      description: 'ceci est une description',
+    }
   ];
 
 
   return (
     <>
-      <div className="skills_wrapper">
-        <div
-          // className={`skills__cards ${isMoving ? 'moving' : ''}`}
-        >
-        {languages.map((language, index) => (
-            <div
-              key={index}
-              className={`card-skill ${index % 2 === 0 ? 'top' : 'bottom'}`} onMouseEnter={handleCardMouseEnter}
-              onMouseLeave={handleCardMouseLeave}
-            >
-              {language}
-            </div>
-          ))}
-        </div>
+      <div className="skills__cards">
+          {languages.map((language, index) => {
+              return <div className="card-skill" key={index}>
+                <div className="card-title">
+                  <h3>{language.name}</h3>
+                </div>
+                {/* <div className="card-description">
+                  <h3>{language.description}</h3>
+                </div> */}
+              </div>
+          })}
       </div>
       <div className="tools">
         <h2>Tools</h2>

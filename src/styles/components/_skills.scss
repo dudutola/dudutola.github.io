@@ -1,53 +1,39 @@
-.skills__wrapper {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-  padding: 100px 0;
-}
 
 .skills__cards {
   display: flex;
-  animation: scroll 24s linear infinite;
+  gap: 30px;
 }
-
 .card-skill {
-  display: inline-block;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 20px;
-  margin: 0 150px;
-  min-width: 150px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  cursor: pointer;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  // transition: width 0.3s ease;
+  display: flex;
+
+  // &:hover {
+  //   width: 300px;
+  // }
+
+  // &:hover .card-description {
+  //   display: flex;
+  // }
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  // transition: opacity ;
 }
 
-.skills__cards.moving {
-  animation-play-state: running;
+.card-description {
+  display: none;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
-
-.skills__cards:not(.moving) {
-  animation-play-state: paused;
-}
-
-.card-skill.top {
-  transform: translateY(-50px);
-}
-
-.card-skill.bottom {
-  transform: translateY(10px);
-}
-
 
 
 .tools {
