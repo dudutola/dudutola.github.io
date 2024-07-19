@@ -47,7 +47,7 @@ export const Home = () => {
         <Skills />
       </section>
       <section className="contact" id="my-contact">
-        <h1>Contact me</h1>
+        <h1>Contact</h1>
         <Contact />
       </section>
     </main>

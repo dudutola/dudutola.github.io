@@ -45,26 +45,26 @@ export const Contact = () => {
       <div className="group">
         <div className="userInfos">
           <label htmlFor="firstname">
-            Firstname:
+            Prénom:
           </label>
           <input
             type="text"
             id="firstname"
             name="firstName"
             value={formData.firstName}
-            placeholder="Enter your first name"
+            placeholder="Votre prénom"
             onChange={handleChange}
             required
           />
           <label htmlFor="lastname">
-            Lastname:
+            Nom:
           </label>
           <input
             type="text"
             id="lastname"
             name="lastName"
             value={formData.lastName}
-            placeholder="Enter your last name"
+            placeholder="Votre nom"
             onChange={handleChange}
             required
           />
@@ -76,7 +76,7 @@ export const Contact = () => {
             id="email"
             name="email"
             value={formData.email}
-            placeholder="Enter your email"
+            placeholder="Votre email"
             onChange={handleChange}
             required
           />
