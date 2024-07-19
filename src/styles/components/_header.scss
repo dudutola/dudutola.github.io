@@ -41,6 +41,10 @@
     font-size: 24px;
     margin-left: 140px;
 
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
     .new-title {
       color: black;
     }
@@ -64,6 +68,16 @@
     .black-links {
       border: 1px solid black;
       color: black;
+    }
+
+    &--projects.black-links {
+      color: black;
+
+      &:hover {
+        background-color: black;
+        border: 1px solid black;
+        color: #fff;
+      }
     }
 
     &--skills.black-links {
@@ -144,14 +158,25 @@
 @media (max-width: 768px) {
   .navbar {
     padding: 0 20px;
+    flex-direction: row-reverse;
 
     &__logo {
-      display: none;
+      h1 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+      }
     }
 
     &__title {
       font-size: 18px;
-      margin: 0;
+      margin: 0 0 0 -36px;
+
+      .new-title {
+        margin: 0 0 0 -70px;
+      }
     }
 
     &__links {
@@ -163,10 +188,18 @@
       position: relative;
 
       #menu {
-        font-size: 22px;
+        font-size: 32px;
         border: 0;
         background-color: transparent;
+        padding: 0;
+      }
+
+      .bars {
         color: white;
+      }
+
+      .change-color {
+        color: black;
       }
 
       .submenu {
@@ -179,15 +212,14 @@
         display: none;
         font-size: 20px;
         border-radius: 4px;
+        left: -2px;
 
         a {
           text-decoration: none;
           color: #fff;
         }
       }
-
-      #menu:hover + .submenu,
-      #menu:active + .submenu  {
+      .submenu.open {
         visibility: visible;
         opacity: 1;
         display: flex;
