@@ -1,5 +1,5 @@
 import "../../styles/components/_skills.scss";
-import git from "../../images/13.png";
+import git from "../../images/git.png";
 import vsc from "../../images/vsc.webp";
 import figma from "../../images/Figma-logo.svg";
 import github from "../../images/GitHubLogo.svg";
