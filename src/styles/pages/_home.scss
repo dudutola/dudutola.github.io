@@ -23,6 +23,14 @@ section {
   height: 70vh;
 }
 
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    height: 80vh;
+  }
+}
+
+
 @media (max-width: 768px) {
   section {
     h1 {
