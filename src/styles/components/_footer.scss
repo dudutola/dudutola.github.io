@@ -7,7 +7,6 @@
   background-color: black;
   align-items: center;
 
-
   &__icon {
     background-color: white;
     border-radius: 50%;
@@ -25,11 +24,22 @@
       font-size: 20px;
     }
   }
-
 }
 
 @media (max-width: 768px) {
   .footer {
-    display: none;
+    flex-direction: column;
+    gap: 18px;
+    padding: 3.5rem 0 1.5rem;
+
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &--text {
+        font-size: 18px;
+      }
+    }
   }
 }

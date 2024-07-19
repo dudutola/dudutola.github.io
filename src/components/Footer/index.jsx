@@ -9,8 +9,8 @@ export const Footer = () => {
         <img src={github} alt="" className="footer__icon" />
       </Link>
       <div className="footer__content">
-        <p className="footer__content--text">&copy; 2024 Dulcelene Machado |</p>
-        <p className="footer__content--text">Tous droits réservés</p>
+        <p className="footer__content--text">&copy; 2024 Dulcelene Machado</p>
+        <p className="footer__content--text">| Tous droits réservés</p>
       </div>
     </footer>
   )
