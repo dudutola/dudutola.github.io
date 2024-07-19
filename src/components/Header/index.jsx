@@ -35,7 +35,7 @@ export const Header = () => {
         <p>Développeuse Web</p>
       </div>
       <div className="navbar__title">
-        <h2>{scrolled ? <a href="/portfolio" className="new-title">DM</a> : <a href="/portfolio">Portfolio</a>}</h2>
+        <h2>{scrolled ? <a href="/portfolio" className="new-title">DM</a> : 'Portfolio'}</h2>
       </div>
       <div className="navbar__links">
         <a href="#my-projects" className={`navbar__links--projects ${scrolled ? 'black-links' : ''}`}>Projects</a>
@@ -46,6 +46,8 @@ export const Header = () => {
         <button
           id="menu"
           onClick={handleMenu}
+          className="dropdown-menu"
+          aria-label="Toggle menu"
         >
           <FontAwesomeIcon className={`bars ${scrolled ? 'change-color' : ''}`} icon={faBars} />
         </button>
@@ -58,7 +60,6 @@ export const Header = () => {
           <li><a href="#my-contact" className="">Contact</a></li>
         </ul>
       </div>
-
     </nav>
   );
 };

@@ -37,10 +37,10 @@ export const Skills = () => {
     <>
       <div className="skills__cards">
           {languages.map((language, index) => {
-              return <div className="card-skill" key={index}>
-                <h3>{language.name}</h3>
-                <img src={process.env.PUBLIC_URL + language.image} alt="" width={300} height={300} />
-              </div>
+            return <div className="card-skill" key={index}>
+              <span>{language.name}</span>
+              <img src={process.env.PUBLIC_URL + language.image} alt="" width={300} height={300} />
+            </div>
           })}
       </div>
       <div className="tools">

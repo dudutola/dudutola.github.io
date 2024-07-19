@@ -2,86 +2,146 @@
   {
     "name": "Ellyzé",
     "src": "/img/book-white.png",
+    "alt": "Ellyzé - Autópsia da Alma",
     "figcaption": "Site de présentation et de vente d'un livre commémoratif.",
     "github": "https://github.com/dudutola/livro",
     "site": "https://www.zmacar.com/",
     "description": "Création d'une page d'accueil pour un site web monopage dédié à la vente d'un livre, incluant des descriptions et des moyens de paiement.",
     "tools": [
-      "html",
-      "css"
+      {
+        "name": "html",
+        "alt": "Language de balisage"
+      },
+      {
+        "name": "css",
+        "alt": "Feuilles de style"
+      }
     ]
   },
   {
     "name": "Booki",
     "src": "/img/BookiLogo.png",
+    "alt": "Site d'hébergements et activités Booki",
     "figcaption": "Plateforme pour trouver rapidement hébergements et activités personnalisées.",
     "github": "https://github.com/dudutola/booki-starter-code",
     "site": "https://dudutola.github.io/booki-starter-code/",
     "description": "Création d'une page d'accueil pour une agence de voyage avec des sections pour la recherche d'hébergements et d'activités, incluant des formulaires de recherche, des filtres et des conteneurs pour les hébergements et les activités. Le site est également rendu responsive.",
     "tools": [
-      "html",
-      "css"
+      {
+        "name": "html",
+        "alt": "Language de balisage"
+      },
+      {
+        "name": "css",
+        "alt": "Feuilles de style"
+      }
     ]
   },
   {
     "name": "OhMyFood",
     "src": "/img/ohmyfoodLogo.png",
+    "alt": "Start-up Ohmyfood",
     "figcaption": "Start-up répertoriant les menus des restaurants gastronomiques à Paris.",
     "github": "https://github.com/dudutola/Ohmyfood",
     "site": "https://dudutola.github.io/Ohmyfood/",
     "description": "Intégration de l'interface mobile-first de la page d'accueil d'une start-up, en rendant la page responsive pour différents appareils et en intégrant les pages des différents restaurants.",
     "tools": [
-      "html",
-      "sass"
+      {
+        "name": "html",
+        "alt": "Language de balisage"
+      },
+      {
+        "name": "sass",
+        "alt": "Préprocesseur CSS"
+      }
     ]
   },
   {
     "name": "Sophie Bluel",
     "src": "/img/SophieBluelLogo.png",
+    "alt": "Portfolio de Sophie Bluel",
     "figcaption": "Portfolio d'une architecte d'intérieur mettant en valeur ses projets.",
     "github": "https://github.com/dudutola/Portfolio-architecte-sophie-bluel",
     "description": "Développement de la page de présentation des travaux, une page de connexion et une modale pour gérer les projets. Implémentation des filtres, authentification utilisateur via formulaire, et interaction avec le back-end pour créer une page web dynamique.",
     "tools": [
-      "html",
-      "js",
-      "sass"
+      {
+        "name": "html",
+        "alt": "Language de balisage"
+      },
+      {
+        "name": "js",
+        "alt": "Language de script"
+      },
+      {
+        "name": "sass",
+        "alt": "Préprocesseur CSS"
+      }
     ]
   },
   {
     "name": "Kasa",
     "src": "/img/KasaLogo.png",
+    "alt": "/Plateforme de location d'appartements Kasa",
     "figcaption": "Plateforme de location d'appartements entre particuliers en France.",
     "github": "https://github.com/dudutola/kasa",
     "description": "Développement d'une application web avec React et React Router, création de l'interface front-end à partir de designs fournis et utilisation d'un fichier JSON contenant des annonces immobilières. Mise en place d'animations et de transitions pour enrichir l'expérience utilisateur.",
     "tools": [
-      "react",
-      "sass"
+      {
+        "name": "react",
+        "alt": "Librairie UI"
+      },
+      {
+        "name": "sass",
+        "alt": "Préprocesseur CSS"
+      }
     ]
   },
   {
     "name": "724Events",
     "src": "/img/724eventsLogo.png",
+    "alt": "Agence événementielle 724Events",
     "figcaption": "Site d'une agence événementielle présentant ses services et réalisations.",
     "github": "https://github.com/dudutola/Debuggez-une-application-React.JS",
     "description": "Débuggage et test de la nouvelle version du site vitrine de l'agence. Analyse du code existant, résolution des bugs, rédaction d'un cahier de recette avec des scénarios de test, et présentation du fonctionnement du site corrigé.",
     "tools": [
-      "Chrome DevTools",
-      "React Developer Tools",
-      "Yarn",
-      "Node.js"
+      {
+        "name": "js",
+        "alt": "Language de script"
+      },
+      {
+        "name": "react",
+        "alt": "Librairie UI"
+      },
+      {
+        "name": "nodejs",
+        "alt": "Environnement d'exécution Javascript"
+      }
     ]
   },
   {
     "name": "Argent Bank",
     "src": "/img/argentBankLogo.png",
+    "alt": "Banque en ligne Argent Bank",
     "figcaption": "Nouvelle banque en ligne avec une application pour gérer les comptes.",
     "github": "https://github.com/dudutola/ArgentBank",
     "description": "Développement d'une application web responsive permettant aux utilisateurs de se connecter, de visualiser leurs transactions mensuelles, d'ajouter, de modifier ou de supprimer des informations sur leurs transactions, et de modifier leur pseudo. Intégration de React Router pour une navigation fluide et rédaction d'un document Swagger pour décrire les routes API.",
     "tools": [
-      "react",
-      "redux",
-      "sass",
-      "yaml"
+      {
+        "name": "react",
+        "alt": "Librairie UI"
+      },
+      {
+        "name": "redux",
+        "alt": "Gestion d'état"
+      },
+      {
+        "name": "sass",
+        "alt": "Préprocesseur CSS"
+      },
+      {
+        "name": "yaml",
+        "alt": "Language de données"
+      }
     ]
   }
 ]

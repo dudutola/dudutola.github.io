@@ -1,7 +1,7 @@
 import "../../styles/components/_banner.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import me from "../../images/flower.jpg";
+import aboutMe from "../../images/flower.jpg";
 import { useEffect, useState } from "react";
 
 export const Banner = () => {
@@ -26,9 +26,9 @@ export const Banner = () => {
             Développeuse Frontend
           </h2>
         </div>
-        <div className="banner__me">
+        <div className="banner__about-me">
           <p>En combinant créativité artistique et compétences techniques, je crée des expériences numériques engageantes.</p>
-          <img src={me} alt="dulcelene" />
+          <img src={aboutMe} alt="Développeuse frontend Dulcelene" />
         </div>
         <div className="arrow">
           <FontAwesomeIcon icon={faArrowDown} />

@@ -4,10 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faPaperclip } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-
 import githubLogo from "../../images/GitHubLogo.svg";
 
-export const Projects = ({ src, figcaption, github, site, name, description, tools }) => {
+export const Projects = ({ src, alt, figcaption, github, site, name, description, tools }) => {
   const [isHovered, setHovered] = useState(false);
   const [isDialogOpen, setDialogOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(true);
@@ -37,7 +36,7 @@ export const Projects = ({ src, figcaption, github, site, name, description, too
         onMouseLeave={handleMouseLeave}
       >
         {!isHovered && (
-          <img src={process.env.PUBLIC_URL + src} alt="" />
+          <img src={process.env.PUBLIC_URL + src} alt={alt} />
           // <img src={"portfolio/" + src} alt="" />
         )}
         {isHovered && (
@@ -45,7 +44,7 @@ export const Projects = ({ src, figcaption, github, site, name, description, too
             {figcaption}
             <div className="links">
               <Link to={github} target="_blank">
-                <img src={githubLogo} alt="" className={isAnimating ? 'link-github vibrate' : 'link-github'} />
+                <img src={githubLogo} alt="Profil Github de Dulcelene" className={isAnimating ? 'link-github vibrate' : 'link-github'} />
               </Link>
               {site &&
                 <Link to={site} target="_blank">
@@ -71,7 +70,7 @@ export const Projects = ({ src, figcaption, github, site, name, description, too
               <h4>Outils utilisés:</h4>
               <div className="dialog__tools">
                 {tools.map((tool, index) => {
-                  return <img key={index} src={process.env.PUBLIC_URL + "/img/" + tool + ".png"} alt="" />
+                  return <img key={index} src={process.env.PUBLIC_URL + "/img/" + tool.name + ".png"} alt={tool.alt} />
                 })}
               </div>
             </div>

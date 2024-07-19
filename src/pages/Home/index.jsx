@@ -30,6 +30,7 @@ export const Home = () => {
               key={index}
               name={project.name}
               src={project.src}
+              alt={project.alt}
               figcaption={project.figcaption}
               github={project.github}
               site={project.site}
