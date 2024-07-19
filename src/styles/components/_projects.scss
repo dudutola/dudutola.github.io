@@ -205,6 +205,9 @@
 
     img {
       width: 100px;
+      height: auto;
+      max-height: 20vh;
+      object-fit: contain;
     }
   }
 }
