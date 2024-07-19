@@ -29,7 +29,6 @@
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
-      // animation: stay-visible 3s ease-in-out forwards;
       animation: stay-visible 4s ease-in-out forwards;
     }
 
@@ -92,9 +91,17 @@
 }
 
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .banner {
+    display: none;
+  }
+}
+
+
 @media (max-width: 768px) {
   .banner {
-    padding-top: 60px;
+    // padding-top: 60px;
+    padding-top: 80px;
 
     &__description {
       gap: 100px;

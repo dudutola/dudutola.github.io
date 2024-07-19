@@ -48,6 +48,12 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tools {
+    display: none;
+  }
+}
+
 
 @media (max-width: 768px) {
   .skills__cards {
