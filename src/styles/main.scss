@@ -19,7 +19,6 @@ main {
 }
 
 img {
-  // width: 100%;
   height: fit-content;
 }
 
@@ -44,6 +43,12 @@ h4 {
 }
 
 @import "./components/header";
+@import "./components/banner";
+@import "./components/projects";
+@import "./components/skills";
+@import "./components/contact";
+@import "./components/footer";
+@import "./pages/home";
 
 @media (max-width: 768px) {
   section {

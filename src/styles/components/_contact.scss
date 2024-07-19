@@ -5,9 +5,14 @@ form {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 80%;
-  margin: auto;
+  margin: 40px;
   background-color: #f9f9f9;
   text-align: left;
+
+  .error {
+    margin-top: 0;
+    color: red;
+  }
 }
 
 .group {
@@ -30,7 +35,7 @@ label {
 input, textarea {
   width: 100%;
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
@@ -71,6 +76,10 @@ textarea {
     padding: 16px;
     width: 100%;
     margin-top: 30px;
+
+    .error {
+      margin-top: 0;
+    }
   }
 
   .group {
@@ -87,7 +96,7 @@ textarea {
 
   input, textarea {
     padding: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 4px;
   }
 
   textarea {

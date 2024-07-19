@@ -207,26 +207,29 @@
         opacity: 0;
         position: absolute;
         margin-top: 1rem;
-        left: -56px;
         list-style: none;
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         font-size: 20px;
         border-radius: 4px;
-        left: -2px;
+        left: 0;
+        top: 100%;
+        background-color: black;
+        padding: 16px;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 36px;
 
         a {
           text-decoration: none;
+          font-size: 28px;
           color: #fff;
         }
       }
       .submenu.open {
         visibility: visible;
         opacity: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        background-color: black;
-        padding: 16px;
       }
     }
   }

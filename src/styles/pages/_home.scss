@@ -1,4 +1,15 @@
-.projects {
+section {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.projects,
+.contact {
   background-color: #f1ebe4;
 }
 
@@ -7,7 +18,25 @@
   padding: 0;
 }
 
+.contact {
+  background-color: #f1ebe4;
+  height: 70vh;
+}
+
 @media (max-width: 768px) {
+  section {
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .banner {
+    height: 92vh;
+  }
+
   .projects,
   .skills,
   .contact {

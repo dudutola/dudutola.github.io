@@ -11,11 +11,9 @@ export const Projects = ({ src, alt, figcaption, github, site, name, description
   const [isDialogOpen, setDialogOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(true);
 
-  const handleMouseEnter = () => setHovered(true);
-  const handleMouseLeave = () => setHovered(false);
-
-  const openDialog = () => setDialogOpen(true);
-  const closeDialog = () => setDialogOpen(false);
+  const handleClick = () => {
+    setDialogOpen(!isDialogOpen);
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -32,12 +30,10 @@ export const Projects = ({ src, alt, figcaption, github, site, name, description
     <>
       <figure
         className="card"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        onClick={() => setHovered(!isHovered)}
       >
         {!isHovered && (
           <img src={process.env.PUBLIC_URL + src} alt={alt} />
-          // <img src={"portfolio/" + src} alt="" />
         )}
         {isHovered && (
           <figcaption className="card__description">
@@ -53,7 +49,7 @@ export const Projects = ({ src, alt, figcaption, github, site, name, description
               }
             </div>
             <div className="position">
-              <span onClick={openDialog} className="position__plus">
+              <span onClick={handleClick} className="position__plus">
                 <FontAwesomeIcon icon={faPlus} />
               </span>
             </div>
@@ -62,7 +58,7 @@ export const Projects = ({ src, alt, figcaption, github, site, name, description
       </figure>
 
       {isDialogOpen && (
-        <div className="dialog-overlay">
+        <div className="dialog-overlay" onClick={() => setDialogOpen(false)}>
           <dialog className="dialog" open>
             <h3>{name}</h3>
             <p>{description}</p>
@@ -74,7 +70,7 @@ export const Projects = ({ src, alt, figcaption, github, site, name, description
                 })}
               </div>
             </div>
-            <button className="btn" onClick={closeDialog}>Close</button>
+            <button className="btn" onClick={() => setDialogOpen(false)}>Close</button>
           </dialog>
         </div>
       )}

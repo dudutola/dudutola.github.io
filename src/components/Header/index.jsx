@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -7,6 +7,7 @@ import "../../styles/components/_header.scss";
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -19,8 +20,17 @@ export const Header = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
@@ -28,7 +38,7 @@ export const Header = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-     <div className={`navbar__logo ${scrolled ? 'hidden' : ''}`}>
+      <div className={`navbar__logo ${scrolled ? 'hidden' : ''}`}>
         <Link to="/portfolio">
           <h1>Dulcelene Machado</h1>
         </Link>
@@ -42,7 +52,7 @@ export const Header = () => {
         <a href="#my-skills" className={`navbar__links--skills ${scrolled ? 'black-links' : ''}`}>Skills</a>
         <a href="#my-contact" className={`navbar__links--contact ${scrolled ? 'black-links' : ''}`}>Contact</a>
       </div>
-      <div className="dropdown">
+      <div className="dropdown" ref={menuRef}>
         <button
           id="menu"
           onClick={handleMenu}
@@ -55,9 +65,9 @@ export const Header = () => {
           className={`submenu ${isMenuOpen ? 'open' : ''}`}
           aria-label="submenu"
         >
-          <li><a href="#my-projects" className="">Projects</a></li>
-          <li><a href="#my-skills" className="">Skills</a></li>
-          <li><a href="#my-contact" className="">Contact</a></li>
+          <li><a href="#my-projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+          <li><a href="#my-skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+          <li><a href="#my-contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
       </div>
     </nav>
