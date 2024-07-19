@@ -205,7 +205,7 @@
       justify-content: space-between;
       align-items: center;
       flex-direction: column;
-      padding: 60px 20px 30px;
+      padding: 12px 20px 20px;
       box-sizing: border-box;
       text-align: center;
       color: rgb(0, 0, 0);
@@ -250,7 +250,7 @@
           border: 1px solid;
           padding: 10px;
           border-radius: 3px;
-          font-size: 1em;
+          font-size: 0.5em;
           border: 0;
           color: #fff;
           background-color: #b38456;
@@ -293,6 +293,9 @@
 
     img {
       width: 160px;
+      height: auto;
+      max-height: 20vh;
+      object-fit: contain;
     }
 
     &__tools {
@@ -311,8 +314,9 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
-
 }
+
+
 @media (max-width: 768px) {
   .cards {
     display: flex;
