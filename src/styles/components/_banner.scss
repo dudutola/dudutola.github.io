@@ -93,7 +93,28 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .banner {
-    display: none;
+    background-color: #b38456;
+    display: flex;
+    align-items: normal;
+    padding-top: 140px;
+
+    &__description {
+      .titles {
+        height: 4em;
+      }
+
+      h2 {
+        font-size: 4em;
+      }
+    }
+
+    &__about-me{
+      img {
+        border-radius: 255px;
+        width: 200px;
+        height: 200px;
+      }
+    }
   }
 }
 

@@ -50,6 +50,14 @@ h4 {
 @import "./components/footer";
 @import "./pages/home";
 
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  section {
+    padding: 0 50px;
+  }
+}
+
+
 @media (max-width: 768px) {
   section {
     padding: 0 20px;
