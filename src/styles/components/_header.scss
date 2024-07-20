@@ -71,17 +71,9 @@
       color: black;
     }
 
-    &--projects.black-links {
-      color: black;
-
-      &:hover {
-        background-color: black;
-        border: 1px solid black;
-        color: #fff;
-      }
-    }
-
-    &--skills.black-links {
+    &--projects.black-links,
+    &--skills.black-links,
+    &--contact.black-links {
       &::before {
         background-color: black;
       }
@@ -93,21 +85,9 @@
       }
     }
 
-    &--contact.black-links {
-      background-color: black;
-      color: #fff;
-    }
-
-    &--projects {
-      color: white;
-
-      &:hover {
-        background-color: black;
-        border: 1px solid black;
-      }
-    }
-
-    &--skills {
+    &--projects,
+    &--skills,
+    &--contact {
       color: white;
       position: relative;
 
@@ -128,7 +108,6 @@
       }
 
       &::after {
-        content: 'Skills';
         position: absolute;
         top: 50%;
         left: 50%;
@@ -144,9 +123,16 @@
       }
     }
 
-    &--contact {
-      background-color: #fff;
-      color: black;
+    &--projects::after {
+      content: 'Projects';
+    }
+
+    &--skills::after {
+      content: 'Skills';
+    }
+
+    &--contact::after {
+      content: 'Contact';
     }
   }
 
@@ -154,6 +140,7 @@
     display: none;
   }
 }
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
