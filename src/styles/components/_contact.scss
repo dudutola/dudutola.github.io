@@ -71,6 +71,45 @@ textarea {
 }
 
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  form {
+    padding: 24px;
+  }
+
+  .group {
+    justify-content: normal;
+    flex-direction: column;
+  }
+
+  .userInfos, .messageContainer {
+    width: 100%;
+  }
+
+  textarea {
+    height: 230px;
+  }
+
+  .btn {
+    align-self: center;
+    width: 200px;
+    padding: 15px;
+    margin-top: 12px;
+    background-color: #b38456;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: black;
+      color: #fff;
+    }
+  }
+}
+
+
 @media (max-width: 767px) {
   form {
     padding: 16px;
