@@ -59,7 +59,7 @@ export const Header = () => {
         <div className="navbar__links">
           <a href="#my-projects" className={`navbar__links--projects ${scrolled ? 'black-links' : ''}`}>Projects</a>
           <a href="#my-skills" className={`navbar__links--skills ${scrolled ? 'black-links' : ''}`}>Skills</a>
-          <a href="#my-contact" className={`navbar__links--contact ${scrolled ? 'black-links' : ''}`}>Contact</a>
+          <a href="#my-contact" className={`navbar__links--contact ${scrolled ? 'black-links' : ''}`}>Contact </a>
         </div>
         <div className="dropdown" ref={menuRef}>
           <button
