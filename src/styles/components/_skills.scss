@@ -48,14 +48,14 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .tools {
     display: none;
   }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .skills__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
