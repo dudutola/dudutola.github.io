@@ -1,0 +1,41 @@
+.main-error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 0 20px;
+}
+
+.error {
+  h1 {
+    font-size: 6em;
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      color: #0000EE;
+    }
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .error {
+    h1 {
+      font-size: 5em;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .error {
+    h1 {
+      font-size: 3em;
+    }
+  }
+}
