@@ -23,7 +23,7 @@ export const Home = () => {
     <main>
       <Banner />
       <section className="projects" id="my-projects">
-        <h1>My Projects</h1>
+        <h1>Mes Projets</h1>
         <div className="cards">
           {projects.map((project, index) => (
             <Projects
