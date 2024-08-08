@@ -57,7 +57,12 @@ export const Contact = () => {
     }
 
     emailjs
-      .sendForm('service_xaqhbdf', 'template_p09ouya', event.target, 'ZWW_83nzAaY3xAqS9')
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        event.target,
+        process.env.REACT_APP_EMAILJS_USER_ID
+      )
       .then((result) => {
         alert("Message sent successfully!");
 
