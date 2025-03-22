@@ -1,5 +1,24 @@
 [
   {
+    "name": "StudentsConnect",
+    "src": "/img/students_connect.png",
+    "alt": "StudentsConnect",
+    "figcaption": "Plateforme d'entraide entre étudiants pour organiser des sessions d’aide et partager des connaissances.",
+    "github": "https://github.com/dudutola/students_connect",
+    "site": "https://www.studentsconnect.me/",
+    "description": "Développement d'une plateforme où les étudiants peuvent demander de l'aide sur un cours terminé ou proposer leur aide à d'autres. Grâce à un système de mise en relation, ils peuvent organiser des sessions de tutorat en fonction de leurs compétences et disponibilités.",
+    "tools": [
+      {
+        "name": "ruby on rails",
+        "alt": "Framework MVC pour le développement web"
+      },
+      {
+        "name": "sass",
+        "alt": "Préprocesseur CSS"
+      }
+    ]
+  },
+  {
     "name": "Ellyzé",
     "src": "/img/book-white.png",
     "alt": "Ellyzé - Autópsia da Alma",

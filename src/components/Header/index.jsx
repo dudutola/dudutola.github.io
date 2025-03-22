@@ -46,7 +46,7 @@ export const Header = () => {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className={`navbar__logo ${scrolled ? 'hidden' : ''}`}>
-          <Link to="/portfolio">
+          <Link to="/">
             <h1>Dulcelene Machado</h1>
           </Link>
           <p>Développeuse Web</p>
