@@ -7,13 +7,17 @@ import github from "../../images/GitHubLogo.svg";
 export const Skills = () => {
 
   const languages = [
+    // {
+    //   name: 'Html',
+    //   image: '/img/html.png',
+    // },
+    // {
+    //   name: 'Css',
+    //   image: '/img/css.png',
+    // },
     {
-      name: 'Html',
-      image: '/img/html.png',
-    },
-    {
-      name: 'Css',
-      image: '/img/css.png',
+      name: 'Ruby on Rails',
+      image: '/img/ruby_on_rails.png',
     },
     {
       name: 'JS',

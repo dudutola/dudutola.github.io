@@ -1,5 +1,24 @@
 [
   {
+    "name": "Fugifala",
+    "src": "/img/fugifala_logo.png",
+    "alt": "Jornal Fugifala",
+    "figcaption": "Lieu d'accueil pour pour les mots retenus, les émotions enfouies et les pensées qui échappent à la parole ordinaire.",
+    "github": "https://github.com/dudutola/fugifala",
+    "site": "https://fugifala.zmacar.com/",
+    "description": "Le Journal Fugifala donne une voix aux émotions silencieuses. À travers des textes et images intimes, ce journal invite à explorer l'univers intérieur avec sensibilité et liberté.",
+    "tools": [
+      {
+        "name": "ruby_on_rails",
+        "alt": "Framework MVC pour le développement web"
+      },
+      {
+        "name": "sass",
+        "alt": "Préprocesseur CSS"
+      }
+    ]
+  },
+  {
     "name": "StudentsConnect",
     "src": "/img/students_connect.png",
     "alt": "StudentsConnect",
@@ -9,7 +28,7 @@
     "description": "Développement d'une plateforme où les étudiants peuvent demander de l'aide sur un cours terminé ou proposer leur aide à d'autres. Grâce à un système de mise en relation, ils peuvent organiser des sessions de tutorat en fonction de leurs compétences et disponibilités.",
     "tools": [
       {
-        "name": "ruby on rails",
+        "name": "ruby_on_rails",
         "alt": "Framework MVC pour le développement web"
       },
       {
