@@ -23,7 +23,8 @@ export const Banner = () => {
             Transformez vos idées <br />en réalité numérique
           </h2>
           <h2 className={`fade-in ${!isFirstTitleVisible ? 'visible' : ''}`}>
-            Développeuse Frontend
+            {/* Développeuse Frontend */}
+            Développeuse Full-Stack
           </h2>
         </div>
         <div className="banner__about-me">
