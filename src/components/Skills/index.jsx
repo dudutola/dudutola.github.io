@@ -50,10 +50,10 @@ export const Skills = () => {
       <div className="tools">
         <h2>Tools</h2>
         <div className="tools__icons">
-          <img src={git} alt="git" width="300" height="300" />
-          <img src={vsc} alt="vsc" width="250" height="250" />
-          <img src={figma} alt="figma" width="100" height="100" />
-          <img src={github} alt="github" width="150" height="150" />
+          <img src={git} alt="git" width="250" height="250" />
+          <img src={vsc} alt="vsc" width="200" height="200" />
+          <img src={figma} alt="figma" width="80" height="80" />
+          <img src={github} alt="github" width="100" height="100" />
         </div>
       </div>
     </>

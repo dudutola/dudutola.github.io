@@ -17,6 +17,11 @@
   }
 
   &__logo {
+    a {
+      cursor: none;
+      pointer-events: none;
+    }
+
     a, h1, p {
       color: #fff;
     }
