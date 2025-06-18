@@ -1,7 +1,6 @@
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -14,7 +13,7 @@
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  height: 300px;
+  height: 260px;
 
   & img {
     width: 100%;
@@ -173,7 +172,7 @@
   .cards {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 24px;
     margin-bottom: 30px;
     gap: 0;

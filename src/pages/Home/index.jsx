@@ -7,7 +7,7 @@ import projectsData from "../../data/projectsData.json";
 import "../../styles/pages/_home.scss";
 
 export const Home = () => {
-  const [projects, setProjects] = useState(projectsData.slice(0, 4));
+  const [projects, setProjects] = useState(projectsData.slice(0, 5));
   const [showAll, setShowAll] = useState(false);
 
   const handleShowAll = () => {
@@ -15,7 +15,7 @@ export const Home = () => {
     if (!showAll) {
       setProjects(projectsData);
     } else {
-      setProjects(projectsData.slice(0, 4));
+      setProjects(projectsData.slice(0, 5));
     }
   }
 
