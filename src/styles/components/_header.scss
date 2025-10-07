@@ -78,7 +78,8 @@
 
     &--projects.black-links,
     &--skills.black-links,
-    &--contact.black-links {
+    &--contact.black-links,
+    &--resume.black-links {
       &::before {
         background-color: black;
       }
@@ -92,7 +93,8 @@
 
     &--projects,
     &--skills,
-    &--contact {
+    &--contact,
+    &--resume {
       color: white;
       position: relative;
 
@@ -139,6 +141,10 @@
     &--contact::after {
       content: 'Contact';
     }
+
+    &--resume::after {
+      content: 'Resume';
+    }
   }
 
   .dropdown {
@@ -146,6 +152,9 @@
   }
 }
 
+.resume {
+  color: white;
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {

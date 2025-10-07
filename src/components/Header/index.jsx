@@ -57,7 +57,7 @@ export const Header = () => {
           </h2>
         </div>
         <div className="navbar__links">
-          <a href="https://dulcelene.com/resume/" className={`navbar__links--projects ${scrolled ? 'black-links' : ''}`}>Resume</a>
+          <a href="https://dulcelene.com/resume/" className={`navbar__links--resume ${scrolled ? 'black-links' : ''}`}>Resume</a>
           <a href="#my-projects" className={`navbar__links--projects ${scrolled ? 'black-links' : ''}`}>Projets</a>
           <a href="#my-skills" className={`navbar__links--skills ${scrolled ? 'black-links' : ''}`}>Skills</a>
           <a href="#my-contact" className={`navbar__links--contact ${scrolled ? 'black-links' : ''}`}>Contact </a>
