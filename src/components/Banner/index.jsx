@@ -1,7 +1,8 @@
 import "../../styles/components/_banner.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import aboutMe from "../../images/me2.webp";
+// import aboutMe from "../../images/me2.webp";
+import aboutMe from "../../images/profile.webp";
 import { useEffect, useState } from "react";
 
 export const Banner = () => {
